@@ -1,0 +1,33 @@
+body{
+background: rgb(234,241,63); 
+background: radial-gradient(circle, rgba(234,241,63,1) 0%,
+     rgba(69,162,252,1) 100%);
+    }
+.gradient-background {
+  background: linear-gradient(300deg,rgba(244,233,106,1) 0%, rgba(236,175,65,1) 26%, rgba(209,70,60,1) 100%);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
