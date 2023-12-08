@@ -171,6 +171,7 @@ footer{
 .footer-links{
   display: flex;
   justify-content: space-between;
+  gap:10px;
 
 }
 .footer-links a{
