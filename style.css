@@ -1,26 +1,49 @@
-body{
-background: rgb(234,241,63); 
-background: radial-gradient(circle, rgba(234,241,63,1) 0%,
-     rgba(69,162,252,1) 100%);
-    }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(234, 241, 63);
+  background: radial-gradient(
+    circle,
+    rgba(234, 241, 63, 1) 0%,
+    rgba(69, 162, 252, 1) 100%
+  );
+
+  font-family: "Poppins", sans-serif;
+}
 .gradient-background {
-  background: linear-gradient(300deg,rgba(244,233,106,1) 0%, rgba(236,175,65,1) 26%, rgba(209,70,60,1) 100%);
+  background: linear-gradient(
+    300deg,
+    rgb(244, 233, 106) 0%,
+    rgba(236, 175, 65, 1) 26%,
+    rgba(209, 70, 60, 1) 100%
+  );
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
+.logo-container {
+  height: 300px;
+}
+.container-feed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b6a5de;
+  width: 100%;
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 }
-
+.container-feed-img {
+  width: 300px;
+}
 .icon-square {
   width: 3rem;
   height: 3rem;
@@ -30,4 +53,135 @@ background: radial-gradient(circle, rgba(234,241,63,1) 0%,
 .profile-img {
   height: 100px;
   border-radius: 50%;
+}
+
+/*                                      Changes                         */
+.nav-bar {
+  height: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  width: 100%;
+  background-color: #7cbcbd;
+  border-bottom: 2px solid orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 40px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+
+}
+
+.logo-text {
+  font-size: 40px;
+}
+
+.logo-img img{
+height: 75px;
+}
+.menu-logo{
+  display: none;
+}
+#mobile-menu-links{
+  display: none;
+}
+
+
+
+.menu-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: white;
+  font-size: 20px;
+}
+.menu-links a {
+  color: black;
+  text-decoration: none;
+}
+.menu-links a:hover{
+  color: white;
+}
+.menu-links li {
+  list-style: none;
+}
+.main-section {
+  height: calc(100vh - 80px);
+  background-color: chocolate;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+.main-logo-img img {
+  height: 400px;
+}
+.iphone-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tagline {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 800;
+}
+
+.app-link {
+  width: fit-content;
+  border-radius: 2rem;
+  padding: 20px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  border: 2px solid ;
+}
+.app-link:hover{
+  background-color: orange;
+  color: white;
+  border: 2px solid blueviolet;
+}
+.iphone-logo {
+  height: 600px;
+}
+
+
+footer{
+  background-color: orange;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title{
+  font-size: 60px;
+}
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer-links a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer-links a:hover{
+  color: blueviolet;
+}
+footer p{
+  margin-top: 20px;
+  font-size: 20px;
 }
