@@ -1,0 +1,87 @@
+@media(max-width:600px){
+    *{
+        overflow-x: hidden;
+        
+    }
+    
+    .nav-bar{
+      display: flex;
+      padding-inline: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+
+
+    .logo-text{
+        display: none;
+    }
+    .menu-logo{
+      display: block;
+      font-size: 40px;
+    }
+    .menu-links{
+      display: none;
+    }
+    #mobile-menu-links{
+      
+      background-color: white;
+      height:fit-content;
+      /* display: flex; */
+      padding: 40px;
+      flex-direction: column;
+      text-align: center;
+      display: none;
+      position: fixed;
+      top: 80px;
+      width: 100%;
+      right: 0%;
+
+    }
+
+    .main-section{
+      flex-direction: column;
+      height: 40vh;
+    }
+    .main-logo-img{
+      display: none;
+    }
+    .iphone-container{
+
+
+        }
+    .title{
+
+    }
+    .tagline{
+      font-size: 1.5rem;
+      line-height: 30px;
+      overflow: hidden;
+
+    }
+    .iphone-logo{
+      height:  300px;
+    }
+    footer{
+      padding-inline: 10px;
+height:fit-content ;
+    }
+    .footer-links{
+      flex-direction: column;
+      text-align: center;
+      
+    }
+    footer p{
+      text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+}
